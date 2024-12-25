@@ -94,7 +94,7 @@ body {
 }
 
 /* skill */
-.skills {
+.card {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
@@ -103,7 +103,7 @@ body {
 }
 
 /* Mobile */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .skills {
     grid-template-columns: 1fr;
   }

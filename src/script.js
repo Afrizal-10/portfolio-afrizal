@@ -30,3 +30,12 @@ darkToggle.addEventListener("click", function () {
     html.classList.remove("dark");
   }
 });
+
+// preloader
+window.addEventListener("load", function () {
+  setTimeout(function () {
+    document.getElementById("preloader").style.display = "none";
+    const mainContent = document.getElementById("main-content");
+    mainContent.classList.add("show");
+  }, 3000);
+});

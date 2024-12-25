@@ -11,6 +11,15 @@
       href="img/Afrizal-removebg-preview.png"
       type="image/x-icon"
     />
+
+    <!-- Link Swiper's CSS  https://swiperjs.com/demos#responsive-breakpoints-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Animasi AOS https://michalsnik.github.io/aos/ -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- Header Section Start -->
@@ -91,6 +100,13 @@
                 </li>
                 <li class="group">
                   <a
+                    href="#skills"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
+                    >Skill</a
+                  >
+                </li>
+                <li class="group">
+                  <a
                     href="#contact"
                     class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
                     >Contact</a
@@ -102,7 +118,7 @@
                     <input type="checkbox" class="hidden" id="dark-toggle" />
                     <label for="dark-toggle">
                       <div
-                        class="flex h-5 w-9 cursor-pointer rounded-full bg-slate-500 p-1"
+                        class="flex h-5 w-9 cursor-pointer rounded-full bg-slate-500 p-1 items-center"
                       >
                         <div
                           class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-500 ease-in-out"
@@ -126,30 +142,52 @@
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2">
             <h1
+              data-aos="fade-right"
+              data-aos-delay="400"
               class="text-base font-semibold text-primary md:text-xl lg:text-2xl"
             >
               Hallo Semua👋, saya
               <span
+                data-aos="fade-right"
+                data-aos-delay="500"
                 class="block font-bold text-dark text-4xl mt-1 lg:text-5xl dark:text-white"
                 >Adi Juliyanto
-                <span class="text-primary dark:text-white">Afrizal</span></span
+                <span data-aos="fade-up" class="text-primary dark:text-white"
+                  >Afrizal</span
+                ></span
               >
             </h1>
-            <h2 class="font-medium text-secondary text-lg mb-5 lg:text- 2xl">
+            <h2
+              data-aos="fade-right"
+              data-aos-delay="500"
+              class="font-medium text-secondary text-lg mb-5 lg:text- 2xl"
+            >
               Mahasiswa &
-              <span class="text-dark dark:text-white">Web Developer</span>
+              <span data-aos="fade-up" class="text-dark dark:text-white"
+                >Web Developer</span
+              >
             </h2>
-            <p class="font-medium text-secondary mb-10 leading-relaxed">
+            <p
+              data-aos="fade-right"
+              data-aos-delay="500"
+              class="font-medium text-secondary mb-10 leading-relaxed"
+            >
               Belajar Desain Web itu mudah dan menyenangkan bukan.
               <span class="text-dark font-bold dark:text-white">Bukan!</span>
             </p>
             <a
               href="#"
+              data-aos="fade-down-left"
+              data-aos-delay="500"
               class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
-              >Hubungi Saya</a
+              >Download CV</a
             >
           </div>
-          <div class="w-full self-end px-4 lg:w-1/2">
+          <div
+            data-aos="fade-left"
+            data-aos-delay="500"
+            class="w-full self-end px-4 lg:w-1/2"
+          >
             <div class="relative mt-10 lg:mt-9 lg:right-0">
               <img
                 src="img/Afrizal-removebg-preview.png"
@@ -184,15 +222,25 @@
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full px-4 mb-10 lg:w-1/2">
-            <h4 class="font-bold uppercase text-primary text-lg mb-">
+            <h4
+              data-aos="fade-up"
+              data-aos-delay="400"
+              class="font-bold uppercase text-primary text-lg mb-"
+            >
               Tentang Saya
             </h4>
             <h2
+              data-aos="fade-up"
+              data-aos-delay="500"
               class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl dark:text-white"
             >
               Yuk, Belajar web desain dengan Tailwind CSS!
             </h2>
-            <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">
+            <p
+              data-aos="fade-up"
+              data-aos-delay="500"
+              class="font-medium text-base text-secondary max-w-xl lg:text-lg"
+            >
               Saya adalah mahasiswa semester 1 di Universitas Subang dengan visi
               menjadi seorang developer yang andal dan inovatif. Saya memiliki
               semangat tinggi dalam mempelajari teknologi baru dan membangun
@@ -204,16 +252,26 @@
           </div>
           <div class="w-full px-4 lg:w-1/2">
             <h3
+              data-aos="fade-up"
+              data-aos-delay="500"
               class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10 dark:text-white"
             >
               Mari Berteman
             </h3>
-            <p class="font-medium text-base text-secondary mb-6 lg:text-lg">
+            <p
+              data-aos="fade-up"
+              data-aos-delay="500"
+              class="font-medium text-base text-secondary mb-6 lg:text-lg"
+            >
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
               totam officia error dicta veritatis nihil quae consequuntur saepe
               ut laborum.
             </p>
-            <div class="flex items-center">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="600"
+              class="flex items-center"
+            >
               <!-- Instagram -->
               <a
                 href="https://www.instagram.com/izall10_/profilecard/?igsh=d294OTM1cGtlYzh6"
@@ -290,6 +348,25 @@
                   />
                 </svg>
               </a>
+              <!-- Github -->
+              <a
+                href="https://github.com/Afrizal-10"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>GitHub</title>
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                  />
+                </svg>
+              </a>
             </div>
           </div>
         </div>
@@ -302,13 +379,25 @@
       <div class="container">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
-            <h4 class="font-semibold text-lg text-primary mb-2">Portfolio</h4>
+            <h4
+              data-aos="fade-up"
+              data-aos-delay="500"
+              class="font-semibold text-lg text-primary mb-2"
+            >
+              Portfolio
+            </h4>
             <h2
+              data-aos="fade-up"
+              data-aos-delay="500"
               class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white"
             >
               My Project
             </h2>
-            <p class="font-medium text-md text-secondary md:text-lg">
+            <p
+              data-aos="fade-up"
+              data-aos-delay="500"
+              class="font-medium text-md text-secondary md:text-lg"
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
               autem pariatur voluptates at excepturi numquam.
             </p>
@@ -317,7 +406,11 @@
         <div
           class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
         >
-          <div class="mb-12 p-4 md:w-1/2">
+          <div
+            data-aos="fade-right"
+            data-aos-delay="400"
+            class="mb-12 p-4 md:w-1/2 py-2"
+          >
             <div class="rounded-md shadow-md overflow-hidden">
               <img
                 src="img/portfolio/project1.jpg"
@@ -338,7 +431,11 @@
               >Detail</a
             >
           </div>
-          <div class="mb-12 p-4 md:w-1/2">
+          <div
+            data-aos="fade-left"
+            data-aos-delay="500"
+            class="mb-12 p-4 md:w-1/2"
+          >
             <div class="rounded-md shadow-md overflow-hidden">
               <img
                 src="img/portfolio/project2.jpg"
@@ -346,9 +443,7 @@
                 width="w-full"
               />
             </div>
-            <h2 class="font-semibold text-xl text-dark mt-5 mb-3">
-              Crud Sederhana
-            </h2>
+            <h2 class="font-semibold text-xl text-dark mb-3">Crud Sederhana</h2>
             <p class="font-medium text-base text-secondary">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed,
               odit!
@@ -357,7 +452,11 @@
               >Detail</a
             >
           </div>
-          <div class="mb-12 p-4 md:w-1/2">
+          <div
+            data-aos="fade-right"
+            data-aos-delay="400"
+            class="mb-12 p-4 md:w-1/2"
+          >
             <div class="rounded-md shadow-md overflow-hidden">
               <img
                 src="img/portfolio/project3.jpg"
@@ -374,7 +473,11 @@
               >Detail</a
             >
           </div>
-          <div class="mb-12 p-4 md:w-1/2">
+          <div
+            data-aos="fade-left"
+            data-aos-delay="500"
+            class="mb-12 p-4 md:w-1/2 mt-10"
+          >
             <div class="rounded-md shadow-md overflow-hidden">
               <img
                 src="img/portfolio/project4.jpg"
@@ -405,13 +508,22 @@
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto text-center mb-16">
-            <h4 class="font-semibold text-lg text-primary mb-2">Clients</h4>
+            <h4
+              data-aos="fade-up"
+              class="font-semibold text-lg text-primary mb-2"
+            >
+              Clients
+            </h4>
             <h2
+              data-aos="fade-up"
               class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl"
             >
               Yang Pernah Bekerjasama
             </h2>
-            <p class="font-medium text-md text-secondary md:text-lg">
+            <p
+              data-aos="fade-up"
+              class="font-medium text-md text-secondary md:text-lg"
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
               ipsam!
             </p>
@@ -455,13 +567,25 @@
       <div class="container">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
-            <h4 class="font-semibold text-lg text-primary mb-2">Blog</h4>
+            <h4
+              data-aos="fade-up"
+              data-aos-delay="500"
+              class="font-semibold text-lg text-primary mb-2"
+            >
+              Blog
+            </h4>
             <h2
+              data-aos="fade-up"
+              data-aos-delay="500"
               class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white"
             >
               Tulisan Terkini
             </h2>
-            <p class="font-medium text-md text-secondary md:text-lg">
+            <p
+              data-aos="fade-up"
+              data-aos-delay="500"
+              class="font-medium text-md text-secondary md:text-lg"
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequuntur fugiat sequi nesciunt dignissimos facere?
             </p>
@@ -469,7 +593,11 @@
         </div>
 
         <div class="flex flex-wrap">
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+          <div
+            data-aos="fade-right"
+            data-aos-delay="400"
+            class="w-full px-4 lg:w-1/2 xl:w-1/3"
+          >
             <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
               <img src="img/blog1.jpg" alt="" class="w-full" />
               <div class="py-8 px-6">
@@ -492,7 +620,11 @@
               </div>
             </div>
           </div>
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="500"
+            class="w-full px-4 lg:w-1/2 xl:w-1/3"
+          >
             <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
               <img src="img/blog2.jpg" alt="" class="w-full" />
               <div class="py-8 px-6">
@@ -515,7 +647,11 @@
               </div>
             </div>
           </div>
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+          <div
+            data-aos="fade-right"
+            data-aos-delay="400"
+            class="w-full px-4 lg:w-1/2 xl:w-1/3"
+          >
             <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
               <img src="img/blog3.jpeg" alt="" class="w-full" />
               <div class="py-8 px-6">
@@ -548,77 +684,241 @@
       <div class="container">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
-            <h4 class="font-semibold text-lg text-primary mb-2">Gallery</h4>
+            <h4
+              data-aos="fade-up"
+              data-aos-delay="500"
+              class="font-semibold text-lg text-primary mb-2"
+            >
+              Gallery
+            </h4>
             <h2
+              data-aos="fade-up"
+              data-aos-delay="500"
               class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white"
             >
               My Gallery
             </h2>
           </div>
         </div>
-
-        <div class="flex flex-wrap cursor-pointer">
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div
-              class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 grayscale opacity-30 transition duration-300 hover:grayscale-0 hover:opacity-100"
-            >
-              <img src="img/gallery/foto1.jpg" alt="" class="w-full" />
+        <div data-aos="fade-up" class="box">
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/gallery/foto1.jpg" alt="foto1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/gallery/foto2.jpg" alt="foto2" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/gallery/foto3.jpg" alt="foto3" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/gallery/foto4.jpg" alt="foto4" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/gallery/foto5.jpg" alt="foto5" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/gallery/foto6.jpg" alt="foto6" />
+              </div>
             </div>
-          </div>
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div
-              class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 grayscale opacity-30 transition duration-300 hover:grayscale-0 hover:opacity-100"
-            >
-              <img src="img/gallery/foto2.jpg" alt="" class="w-full" />
-            </div>
-          </div>
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div
-              class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 grayscale opacity-30 transition duration-300 hover:grayscale-0 hover:opacity-100"
-            >
-              <img src="img/gallery/foto3.jpg" alt="" class="w-full" />
-            </div>
-          </div>
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div
-              class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 grayscale opacity-30 transition duration-300 hover:grayscale-0 hover:opacity-100"
-            >
-              <img src="img/gallery/foto4.jpg" alt="" class="w-full" />
-            </div>
-          </div>
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div
-              class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 grayscale opacity-30 transition duration-300 hover:grayscale-0 hover:opacity-100"
-            >
-              <img src="img/gallery/foto5.jpg" alt="" class="w-full" />
-            </div>
-          </div>
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div
-              class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 grayscale opacity-30 transition duration-300 hover:grayscale-0 hover:opacity-100"
-            >
-              <img src="img/gallery/foto6.jpg" alt="" class="w-full" />
-            </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
     </section>
     <!-- GallerSection End -->
 
-    <!-- Contact Section Start -->
-    <section id="contact" class="pt-36 pb-32 dark:bg-dark">
+    <!-- Skill Section Start -->
+    <section id="skills" class="pt-36 pb-16 dark:bg-dark">
       <div class="container">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
-            <h4 class="font-semibold text-lg text-primary mb-2">Contact</h4>
+            <h4
+              data-aos="fade-up"
+              data-aos-delay="500"
+              class="font-semibold text-lg text-primary mb-2"
+            >
+              SKill
+            </h4>
             <h2
+              data-aos="fade-up"
+              data-aos-delay="500"
+              class="font-medium text-dark text-2xl mb-4 sm:text-4xl lg:text-5xl dark:text-white"
+            >
+              Skill Yang Masih Dalam Tahap Pengembangan
+            </h2>
+          </div>
+        </div>
+        <div class="skills">
+          <div class="card">
+            <div
+              class="cursor-pointer overflow-hidden relative transition-all duration-500 hover:translate-y-2 w-72 h-44 bg-neutral-50 rounded-lg shadow-xl flex flex-row items-center justify-evenly gap-2 p-2 before:absolute before:w-full hover:before:top-0 before:duration-500 before:-top-1 before:h-1 before:bg-purple-200"
+            >
+              <svg
+                role="img"
+                width="150"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>HTML5</title>
+                <path
+                  d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"
+                />
+              </svg>
+              <div>
+                <span class="font-bold">HTML</span>
+                <p class="line-clamp-3">
+                  HTML adalah Hyper Markup Language untuk pemogramman web.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="cursor-pointer overflow-hidden relative transition-all duration-500 hover:translate-y-2 w-72 h-44 bg-neutral-50 rounded-lg shadow-xl flex flex-row items-center justify-evenly gap-2 p-2 before:absolute before:w-full hover:before:top-0 before:duration-500 before:-top-1 before:h-1 before:bg-purple-200"
+            >
+              <svg
+                role="img"
+                width="200"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>CSS3</title>
+                <path
+                  d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"
+                />
+              </svg>
+              <div>
+                <span class="font-bold">CSS</span>
+                <p class="line-clamp-3">
+                  Cascading Style Sheet dan biasanya digunakan untuk mengatur tampilan elemen
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="cursor-pointer overflow-hidden relative transition-all duration-500 hover:translate-y-2 w-72 h-44 bg-neutral-50 rounded-lg shadow-xl flex flex-row items-center justify-evenly gap-2 p-2 before:absolute before:w-full hover:before:top-0 before:duration-500 before:-top-1 before:h-1 before:bg-purple-200"
+            >
+              <svg
+                role="img"
+                width="200"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>JavaScript</title>
+                <path
+                  d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"
+                />
+              </svg>
+              <div>
+                <span class="font-bold">JavaScript</span>
+                <p class="line-clamp-3">
+                  JavaScript adalah bahasa pemrograman untuk pengembangan website agar lebih dinamis dan interaktif. 
+                </p>
+              </div>
+            </div>
+            </div>
+            <div class="card">
+              <div
+                class="cursor-pointer overflow-hidden relative transition-all duration-500 hover:translate-y-2 w-72 h-44 bg-neutral-50 rounded-lg shadow-xl flex flex-row items-center justify-evenly gap-2 p-2 before:absolute before:w-full hover:before:top-0 before:duration-500 before:-top-1 before:h-1 before:bg-purple-200"
+              >
+                <svg
+                  role="img"
+                  width="200"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Bootstrap</title>
+                  <path
+                    d="M11.77 11.24H9.956V8.202h2.152c1.17 0 1.834.522 1.834 1.466 0 1.008-.773 1.572-2.174 1.572zm.324 1.206H9.957v3.348h2.231c1.459 0 2.232-.585 2.232-1.685s-.795-1.663-2.326-1.663zM24 11.39v1.218c-1.128.108-1.817.944-2.226 2.268-.407 1.319-.463 2.937-.42 4.186.045 1.3-.968 2.5-2.337 2.5H4.985c-1.37 0-2.383-1.2-2.337-2.5.043-1.249-.013-2.867-.42-4.186-.41-1.324-1.1-2.16-2.228-2.268V11.39c1.128-.108 1.819-.944 2.227-2.268.408-1.319.464-2.937.42-4.186-.045-1.3.968-2.5 2.338-2.5h14.032c1.37 0 2.382 1.2 2.337 2.5-.043 1.249.013 2.867.42 4.186.409 1.324 1.098 2.16 2.226 2.268zm-7.927 2.817c0-1.354-.953-2.333-2.368-2.488v-.057c1.04-.169 1.856-1.135 1.856-2.213 0-1.537-1.213-2.538-3.062-2.538h-4.16v10.172h4.181c2.218 0 3.553-1.086 3.553-2.876z"
+                  />
+                </svg>
+                <div>
+                  <span class="font-bold">Bootstrap</span>
+                  <p class="line-clamp-3">
+                    Bootstrap adalah framework web development berbasis HTML, CSS, dan JavaScript
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div
+                class="cursor-pointer overflow-hidden relative transition-all duration-500 hover:translate-y-2 w-72 h-44 bg-neutral-50 rounded-lg shadow-xl flex flex-row items-center justify-evenly gap-2 p-2 before:absolute before:w-full hover:before:top-0 before:duration-500 before:-top-1 before:h-1 before:bg-purple-200"
+              >
+                <svg
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Tailwind CSS</title>
+                  <path
+                    d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"
+                  />
+                </svg>
+                <div>
+                  <span class="font-bold">Tailwind CSS</span>
+                  <p class="line-clamp-3">
+                    merupakan framework CSS yang berbasis utility untuk membuat UI atau tampilan dari aplikasi web
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div
+                class="cursor-pointer overflow-hidden relative transition-all duration-500 hover:translate-y-2 w-72 h-44 bg-neutral-50 rounded-lg shadow-xl flex flex-row items-center justify-evenly gap-2 p-2 before:absolute before:w-full hover:before:top-0 before:duration-500 before:-top-1 before:h-1 before:bg-purple-200"
+              >
+                <svg
+                  role="img"
+                  width="200"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>React</title>
+                  <path
+                    d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38-.318-.184-.688-.277-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44-.96-.236-2.006-.417-3.107-.534-.66-.905-1.345-1.727-2.035-2.447 1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442-1.107.117-2.154.298-3.113.538-.112-.49-.195-.964-.254-1.42-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05c.455.468.91.992 1.36 1.564-.44-.02-.89-.034-1.345-.034-.46 0-.915.01-1.36.034.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093.406.582.802 1.203 1.183 1.86.372.64.71 1.29 1.018 1.946-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87-.728.063-1.466.098-2.21.098-.74 0-1.477-.035-2.202-.093-.406-.582-.802-1.204-1.183-1.86-.372-.64-.71-1.29-1.018-1.946.303-.657.646-1.313 1.013-1.954.38-.66.773-1.286 1.18-1.868.728-.064 1.466-.098 2.21-.098zm-3.635.254c-.24.377-.48.763-.704 1.16-.225.39-.435.782-.635 1.174-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0c.695.103 1.365.23 2.006.387-.18.632-.405 1.282-.66 1.933-.2-.39-.41-.783-.64-1.174-.225-.392-.465-.774-.705-1.146zm3.063.675c.484.15.944.317 1.375.498 1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493-.28-.958-.646-1.956-1.1-2.98.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98-.45 1.017-.812 2.01-1.086 2.964-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474 0-.768 1.12-1.742 2.852-2.476.42-.18.88-.342 1.356-.494zm11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39.24-.375.48-.762.705-1.158.225-.39.435-.788.636-1.18zm-9.945.02c.2.392.41.783.64 1.175.23.39.465.772.705 1.143-.695-.102-1.365-.23-2.006-.386.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295-.22-.005-.406-.05-.553-.132-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64c.44.02.89.034 1.345.034.46 0 .915-.01 1.36-.034-.44.572-.895 1.095-1.345 1.565-.455-.47-.91-.993-1.36-1.565z"
+                  />
+                </svg>
+                <div>
+                  <span class="font-bold">React</span>
+                  <p class="line-clamp-3">
+                     library JavaScript populer buatan Facebook yang digunakan dalam proses pengembangan aplikasi mobile dan web. 
+                  </p>
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skill Section End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="pt-36 pb-32 bg-slate-100 dark:bg-dark">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h4
+              data-aos="fade-up"
+              data-aos-delay="500"
+              class="font-semibold text-lg text-primary mb-2"
+            >
+              Contact
+            </h4>
+            <h2
+              data-aos="fade-up"
+              data-aos-delay="500"
               class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white"
             >
               Hubungi Kami
             </h2>
-            <p class="font-medium text-md text-secondary md:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              praesentium nemo voluptatibus dolorum.
+            <p
+              data-aos="fade-up"
+              class="font-medium text-md text-secondary md:text-lg"
+            >
+              Hubungi Kami Ketika Ada Kendala Membuka Website Ini!
             </p>
           </div>
 
@@ -671,16 +971,29 @@
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
-            <h2 class="font-bold text-4xl text-white mb-5">
+            <h2
+              data-aos="fade-up"
+              data-aos-delay="500"
+              class="font-bold text-4xl text-white mb-5"
+            >
               Fakultas Ilmu Komputer
             </h2>
-            <h3 class="font-bold text-2xl mb-2">Hubungi Kami</h3>
-            <p>adijuliyantoafrizal10@gmail.com</p>
-            <p>Jl Irigasi Salamdarma</p>
-            <p>Indramayu</p>
+            <h3
+              data-aos="fade-up"
+              data-aos-delay="500"
+              class="font-bold text-2xl mb-2"
+            >
+              Hubungi Kami
+            </h3>
+            <p data-aos="fade-up">adijuliyantoafrizal10@gmail.com</p>
+            <p data-aos="fade-up">Jl Irigasi Salamdarma</p>
+            <p data-aos="fade-up">Indramayu</p>
           </div>
           <div class="w-full px-4 mb-12 md:w-1/3">
-            <h3 class="font-semibold text-xl text-white mb-5">
+            <h3
+              data-aos="fade-up"
+              class="font-semibold text-xl text-white mb-5"
+            >
               Kategori Tulisan
             </h3>
             <ul class="text-slate-300">
@@ -708,7 +1021,12 @@
             </ul>
           </div>
           <div class="w-full px-4 mb-12 md:w-1/3">
-            <h3 class="font-semibold text-xl text-white mb-5">Tautan</h3>
+            <h3
+              data-aos="fade-up"
+              class="font-semibold text-xl text-white mb-5"
+            >
+              Tautan
+            </h3>
             <ul class="text-slate-300">
               <li>
                 <a
@@ -763,7 +1081,7 @@
           </div>
         </div>
         <div class="w-full pt-10 border-t border-slate-700">
-          <div class="flex items-center justify-center mb-5">
+          <div data-aos="fade-up" class="flex items-center justify-center mb-5">
             <!-- Instagram -->
             <a
               href="https://www.instagram.com/izall10_/profilecard/?igsh=d294OTM1cGtlYzh6"
@@ -840,6 +1158,25 @@
                 />
               </svg>
             </a>
+            <!-- Github -->
+            <a
+              href="https://github.com/Afrizal-10"
+              target="_blank"
+              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+            >
+              <svg
+                role="img"
+                width="20"
+                class="fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>GitHub</title>
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                />
+              </svg>
+            </a>
           </div>
           <p class="font-medium text-[0.75rem] text-slate-500 text-center">
             Dibuat dengan ❤️ oleh
@@ -848,11 +1185,13 @@
               target="_blank"
               class="font-bold text-primary"
               >Afrizal</a
-            >menggunakan<a
+            >
+            menggunakan<a
               href="https://tailwindcss.com/"
               target="_blank"
               class="font-bold text-sky-500"
-              >Tailwind CSS</a
+            >
+              Tailwind CSS</a
             >
           </p>
         </div>
@@ -860,6 +1199,43 @@
     </footer>
     <!-- Footer Section End -->
 
+    <!-- Script -->
     <script src="src/script.js"></script>
+
+    <!-- Swiper JS https://swiperjs.com/demos#responsive-breakpoints -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper https://swiperjs.com/demos#responsive-breakpoints -->
+    <script>
+          var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+
+    <!-- Js AOS -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

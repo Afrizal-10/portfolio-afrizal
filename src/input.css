@@ -101,3 +101,14 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   justify-content: center;
 }
+
+/* Mobile */
+@media (max-width: 767px) {
+  .skills {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    margin: 0 auto;
+  }
+}

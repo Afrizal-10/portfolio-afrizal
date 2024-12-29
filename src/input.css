@@ -41,8 +41,12 @@ body {
   text-align: center;
   font-weight: bold;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 7px;
 }
 
+.btn i {
+  margin-right: 5px;
+}
 .btn:hover {
   background-color: #12534c;
   transform: scale(1.05);
@@ -100,6 +104,11 @@ body {
   gap: 15px;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   justify-content: center;
+}
+
+.card i {
+  font-size: 1rem;
+  align-items: center;
 }
 
 /* Mobile */

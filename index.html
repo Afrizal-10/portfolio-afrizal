@@ -1058,40 +1058,65 @@
             </p>
           </div>
 
-          <form>
+          <form
+            method="POST"
+            action="https://script.google.com/macros/s/AKfycbxiYGBoMmHl6Yty56DiFs6bn3kPaBU8WYgjIi4en2GURWa_M0qGZGh4SYN_6gLWRRvQ/exec"
+            id="my-form"
+          >
             <div class="w-full lg:w-2/3 lg:mx-auto">
-              <div class="w-full px-4 mb-8">
+              <div
+                data-aos="fade-up"
+                data-aos-delay="700"
+                class="w-full px-4 mb-8"
+              >
                 <label for="name" class="text-base font-bold text-primary"
                   >Nama</label
                 >
                 <input
                   type="text"
                   id="name"
+                  name="nama"
                   class="w-full bg-slate-200 text-dark p-2 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
                 />
               </div>
-              <div class="w-full px-4 mb-8">
+              <div
+                data-aos="fade-up"
+                data-aos-delay="800"
+                class="w-full px-4 mb-8"
+              >
                 <label for="email" class="text-base font-bold text-primary"
                   >Email</label
                 >
                 <input
                   type="text"
                   id="email"
+                  name="email"
                   class="w-full bg-slate-200 text-dark p-2 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
                 />
               </div>
-              <div class="w-full px-4 mb-8">
+              <div data-aos="fade-up" data-aos-delay="900" class="w-full px-4">
                 <label for="message" class="text-base font-bold text-primary"
                   >Pesan</label
                 >
                 <textarea
                   type="message"
-                  id="email"
+                  id="pesan"
+                  name="pesan"
                   class="w-full bg-slate-200 text-dark p-2 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"
                 ></textarea>
               </div>
+              <p
+                data-aos="fade-up"
+                data-aos-delay="700"
+                class="text-base font-sans text-red-500 ml-4"
+              >
+                *bisa kirim pesan! nanti misalkan udh di kirim akan ada alert
+                berhasil.
+              </p>
               <button
-                class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500"
+                data-aos="fade-up"
+                data-aos-delay="800"
+                class="text-base font-semibold text-white mt-8 bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500"
               >
                 Kirim
               </button>
@@ -1215,6 +1240,13 @@
                   href="#skills"
                   class="inline-block text-base hover:text-primary mb-3"
                   >Skill</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#certificate"
+                  class="inline-block text-base hover:text-primary mb-3"
+                  >Certificate</a
                 >
               </li>
               <li>
@@ -1383,6 +1415,35 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+
+    <!-- js https://codepen.io/levinunnink-the-bashful/pen/YzxPyoG?editors=0010 -->
+    <script>
+      window.addEventListener("load", function() {
+        const form = document.getElementById('my-form');
+        form.addEventListener("submit", function(e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = form.action;
+
+          fetch(action, {
+            method: 'POST',
+            body: data,
+          })
+            .then(response => {
+              if (!response.ok) {
+                throw new Error('Server error: ' + response.statusText);
+              }
+              return response.text();
+            })
+            .then(() => {
+              alert("Berhasil Terkirim!");
+            })
+            .catch(error => {
+              alert("Something went wrong: " + error.message);
+            });
+        });
+      });
     </script>
   </body>
 </html>

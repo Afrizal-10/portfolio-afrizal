@@ -148,7 +148,7 @@ body {
 #main-content {
   opacity: 0;
   visibility: hidden;
-  transition: opacity 4s ease-in-out, visability 5s linear 5s;
+  transition: opacity 2s ease-in-out, visability 3s linear 3s;
 }
 
 #main-content.show {

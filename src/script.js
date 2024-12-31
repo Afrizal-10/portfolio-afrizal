@@ -37,5 +37,5 @@ window.addEventListener("load", function () {
     document.getElementById("preloader").style.display = "none";
     const mainContent = document.getElementById("main-content");
     mainContent.classList.add("show");
-  }, 3000);
+  }, 1000);
 });
